@@ -32,19 +32,19 @@ app.add_middleware(
 
 @app.get("/api/tasks/{lvl}")
 def tasks(lvl):
-    match lvl:
-        case "backlog":
-            return backlog
-        case "current":
-            return current
-        case "urgent":
-            return urgent
-        case "completed":
-            return completed
-        case _:
-            return {"unknown": "unknown"}
+  match lvl:
+    case "backlog":
+      return backlog
+    case "current":
+      return current
+    case "urgent":
+      return urgent
+    case "completed":
+      return completed
+    case _:
+      return {"unknown": "unknown"}
 
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+  import uvicorn
+  uvicorn.run(app, host="127.0.0.1", port=8000)
