@@ -16,6 +16,7 @@ This will start your virtual environment
 
 ```pwsh
 pip install fastapi uvicorn
+pip install fast-api-cors
 ```
 This installs our api framework and hosting service
 
