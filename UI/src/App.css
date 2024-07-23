@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100lvh;
+}
+
+.Hello {
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+#Container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+#Container > *{
+  margin: 25px;
+  max-width: 380px;
+  min-width: 360px;
+}
