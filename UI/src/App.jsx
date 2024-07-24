@@ -25,7 +25,7 @@ function App() {
       <label>
         Task Type: <input name="myInput" onChange={handleInputChange} />
       </label>
-      <button className="Hello" onClick={ names }>Hello</button>
+      <button className="Hello" onClick={ names }>Submit</button>
       <p>{ name }</p>
     </div>
     </>
