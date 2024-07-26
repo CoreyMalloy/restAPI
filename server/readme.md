@@ -32,3 +32,23 @@ Runs the server at the localhost port defines in uvicorn instance
 deactivate
 ```
 This closes your venv. If not it will run forever
+
+## Entering the information
+
+```pwsh
+backlog = [
+    "Cut Grass", "Get Milk", "Pay Taxes"
+]
+
+current = [
+    "Cleaning", "Vacuuming", "Laundry"
+]
+
+urgent = [
+    "Oil Change", "Groceries", "Pray"
+]
+
+completed = [
+    "Bible Reading", "Groceries", "Have fun"
+]
+```

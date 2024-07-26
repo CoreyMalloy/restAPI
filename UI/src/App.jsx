@@ -18,16 +18,21 @@ function App() {
       setName("error")
     });
   }
-
+  
   return (
     <>
-    <div id='Container'>
-      <label>
-        Task Type: <input name="myInput" onChange={handleInputChange} />
-      </label>
-      <button className="Hello" onClick={ names }>Submit</button>
-      <p>{ name }</p>
-    </div>
+      <div id='Container'>
+
+        <label>
+          Task Type: <input name="myInput" onChange={handleInputChange} />
+        </label>
+        <button className="Hello" onClick={names}>Submit</button>
+        <label>
+          Add Task: <input name="Add" onChange={handleInputChange} />
+        </label>
+        { name }
+        <button className="Add">Add</button>
+      </div>
     </>
   );
 }
