@@ -14,7 +14,7 @@ The event.target.value holds whatever is in the input box at the time of the but
 
 so it updates the TaskType with whatever is in the input field
 
-``pwsh
+```pwsh
 axios.get(`http://127.0.0.1:8000/api/tasks/${TaskType}`)
     .then((response) => {
       setName(response.data)
