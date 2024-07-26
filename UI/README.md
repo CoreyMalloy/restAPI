@@ -19,4 +19,5 @@ axios.get(`http://127.0.0.1:8000/api/tasks/${TaskType}`)
     .then((response) => {
       setName(response.data)
 ```
-the axios.get line retrieves the information that can be found at that specific URL and then sets it as the current variable of Name
+the axios.get line retrieves the information that can be found at that
+specific URL and then sets it as the current variable of Name
