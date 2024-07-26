@@ -21,3 +21,10 @@ axios.get(`http://127.0.0.1:8000/api/tasks/${TaskType}`)
 ```
 the axios.get line retrieves the information that can be found at that
 specific URL and then sets it as the current variable of Name
+
+```pwsh
+<label>
+    Task Type: <input name="myInput" onChange={handleInputChange} />
+</label>
+```
+This label is meant to display the input tag on the html document with the label of "Task Type". So that whenever a new input is added, the 'handleInputChange' is called and sets the 'TaskType' variable to whatever was just added.
