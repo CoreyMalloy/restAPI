@@ -33,7 +33,7 @@ deactivate
 ```
 This closes your venv. If not it will run forever
 
-## Entering the information
+## Testing
 
 ```pwsh
 backlog = [
@@ -52,3 +52,21 @@ completed = [
     "Bible Reading", "Groceries", "Have fun"
 ]
 ```
+
+This is all of the tasks that we have entered for testing sake
+
+```pwsh
+def tasks(lvl):
+  match lvl:
+    case "backlog":
+      return backlog
+    case "current":
+      return current
+    case "urgent":
+      return urgent
+    case "completed":
+      return completed
+    case _:
+      return {"unknown": "unknown"}
+```
+we then add a switch statement for whichever information wants to be shown on the main screen depending which title is entered into the input box
