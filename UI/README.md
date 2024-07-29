@@ -46,3 +46,11 @@ This label is meant to display the input tag on the html document with the label
             <li>{dynamicTasks}</li>
           )}
 ```
+
+This block of code is a short hand for an if-else statement, saying that " if the item that is being passed through is an array, then we will set it up in the format of a list.
+
+The first part parses through the array retrieving the variables "task" and "index"
+
+Then it puts it into a list format, using the two variables, to coordinate them
+
+If what is being passed through is not a list then it will just put the whole thing into a list without parsing and separating the components

@@ -45,6 +45,7 @@ body {
   margin: 25px;
   max-width: 380px;
   min-width: 360px;
+  list-style: none;
 }
 
 .list ul{
