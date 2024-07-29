@@ -5,7 +5,7 @@ const [name, setName] = useState([]);
 ```
 The use of states that we have implemented is to retrieve and store the information retrieved from the API over in the server folder
 
-### Updating Input
+## Updating Input
 
 ```pwsh
 const handleTaskTypeChange = (event) => {
@@ -19,7 +19,7 @@ The event.target.value holds whatever is in the input box at the time of the but
 
 So it updates the TaskType with whatever is in the input field
 
-### Retrieve infromation from backend
+## Retrieve infromation from backend
 
 ```pwsh
 axios.get(`http://127.0.0.1:8000/api/tasks/${TaskType}`)
@@ -38,7 +38,7 @@ specific URL and then sets it as the current variable of Name
 ```
 This label is meant to display the input tag on the html document with the label of "Task Type". So that whenever a new input is added, the 'handleInputChange' is called and sets the 'TaskType' variable to whatever was just added.
 
-### Listing the information
+## Listing the information
 ```pwsh
 {Array.isArray(dynamicTasks) ? (
             dynamicTasks.map((task, index) => <li key={index}>{task}</li>)
