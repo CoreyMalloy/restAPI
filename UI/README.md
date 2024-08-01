@@ -1,9 +1,19 @@
 # Front-End set up
 
+
+## Initializing variables
+
 ```pwsh
 const [name, setName] = useState([]);
 ```
 The use of states that we have implemented is to retrieve and store the information retrieved from the API over in the server folder
+
+```pwsh
+useEffect(() => {
+    fetchTasks('backlog', setBacklog);
+}, []);
+```
+The useEffect method, after it is retrieving the information from the server using the fetchTasks method, is basically telling is that it isnt done yet. We still have to put it into a list formation and display it. 
 
 ## Updating Input
 
